@@ -5,7 +5,6 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDesktop, setOpenDesktop] = useState("");
   const [openMobile, setOpenMobile] = useState("");
-
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 8);
     window.addEventListener("scroll", onScroll, { passive: true });
